@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1004628788212",
+    "firebase_url": "https://salamport-9b3db.firebaseio.com",
+    "project_id": "salamport-9b3db",
+    "storage_bucket": "salamport-9b3db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1004628788212:android:be977c3ba84c6fb64a2fa1",
+        "android_client_info": {
+          "package_name": "com.example.salamport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1004628788212-2o5fpf5s4iq18c32g7t7emo7d0b641sj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAOMHO2sjkPD3znPThN652_2cCla4TeM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1004628788212-2o5fpf5s4iq18c32g7t7emo7d0b641sj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

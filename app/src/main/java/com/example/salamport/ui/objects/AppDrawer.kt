@@ -10,6 +10,7 @@ import com.example.salamport.utilits.APP_ACTIVITY
 import com.example.salamport.database.USER
 import com.example.salamport.ui.fragments.*
 import com.example.salamport.ui.fragments.testFragments.TestListFragment
+import com.example.salamport.ui.fragments.testFragments.VideoChatFragment
 import com.example.salamport.utilits.downloadAndSetImage
 import com.example.salamport.utilits.replaceFragment
 import com.mikepenz.materialdrawer.AccountHeader
@@ -76,12 +77,12 @@ class AppDrawer {
                     .withIcon(R.drawable.ic_menu_create_groups),
                 PrimaryDrawerItem().withIdentifier(101)
                     .withIconTintingEnabled(true)
-                    .withName("Чаты")
+                    .withName("Карты")
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_menu_secret_chat),
                 PrimaryDrawerItem().withIdentifier(102)
                     .withIconTintingEnabled(true)
-                    .withName("Деловые чаты")
+                    .withName("Умный бот")
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_menu_create_channel),
                 PrimaryDrawerItem().withIdentifier(103)
@@ -91,7 +92,7 @@ class AppDrawer {
                     .withIcon(R.drawable.ic_menu_contacts),
                 PrimaryDrawerItem().withIdentifier(104)
                     .withIconTintingEnabled(true)
-                    .withName("Звонки")
+                    .withName("Лента вакансий")
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_menu_phone),
                 PrimaryDrawerItem().withIdentifier(105)
@@ -131,10 +132,10 @@ class AppDrawer {
     private fun clickToItem(position: Int) {
         when (position) {
             1 -> replaceFragment(ProfileFragment())
-            //2 -> replaceFragment(ChatFragment())
-            //3 -> replaceFragment(WorkChatFragment())
+            2 -> replaceFragment(MapsFragment())
+            3 -> replaceFragment(IntalagentBotFragment())
             4 -> replaceFragment(ContactsFragment())
-            //5 -> replaceFragment(CallFragmant())
+            5 -> replaceFragment(VideoCallFragmentFragment())
             6 -> replaceFragment(TestListFragment())
             7 -> replaceFragment(SettingsFragment())
             9 -> replaceFragment(QRFragment())

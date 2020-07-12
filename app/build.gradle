@@ -8,9 +8,13 @@ android {
     buildToolsVersion "29.0.3"
     viewBinding.enabled = true
 
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
     defaultConfig {
         applicationId "com.example.salamport"
-        minSdkVersion 22
+        minSdkVersion 24
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -52,5 +56,11 @@ dependencies {
 
 // Add for NavController support
     implementation "com.mikepenz:materialdrawer-nav:7.0.0"
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'org.webrtc:google-webrtc:1.0.22512'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
 
 }

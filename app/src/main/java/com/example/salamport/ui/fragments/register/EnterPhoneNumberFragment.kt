@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import com.example.salamport.R
 import com.example.salamport.database.AUTH
 import com.example.salamport.utilits.*
+import com.example.salamport.ui.fragments.register.EnterCodeFragment
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider

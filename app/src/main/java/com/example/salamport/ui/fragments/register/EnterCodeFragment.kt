@@ -3,6 +3,7 @@ package com.example.salamport.ui.fragments.register
 import androidx.fragment.app.Fragment
 import com.example.salamport.R
 import com.example.salamport.database.*
+import com.example.salamport.database.FirebaseData.database
 import com.example.salamport.utilits.*
 import com.google.firebase.auth.PhoneAuthProvider
 import kotlinx.android.synthetic.main.fragment_enter_code.*

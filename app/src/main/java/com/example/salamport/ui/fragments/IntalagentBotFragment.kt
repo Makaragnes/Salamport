@@ -9,15 +9,17 @@ import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import com.example.salamport.R
+import com.example.salamport.utilits.APP_ACTIVITY
 import kotlinx.android.synthetic.main.fragment_intalagent_bot.*
 import kotlinx.android.synthetic.main.fragment_maps.*
 
 class IntalagentBotFragment : BaseFragment(R.layout.fragment_intalagent_bot) {
 
-    private val url = "http://127.0.0.1:5000/"
+    private val url = "http://192.168.1.43:80/bot"
 
     override fun onResume() {
         super.onResume()
+        APP_ACTIVITY.title = "AI-помощник"
 
         bot_web_view.webViewClient = object : WebViewClient(){
             override fun shouldOverrideUrlLoading(

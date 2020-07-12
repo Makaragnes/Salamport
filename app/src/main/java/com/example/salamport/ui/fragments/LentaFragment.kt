@@ -1,4 +1,4 @@
-package com.example.salamport.ui.fragments.testFragments
+package com.example.salamport.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,24 +8,20 @@ import android.view.ViewGroup
 import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import androidx.recyclerview.widget.RecyclerView
 import com.example.salamport.R
-import com.example.salamport.ui.fragments.BaseFragment
 import com.example.salamport.utilits.APP_ACTIVITY
+import kotlinx.android.synthetic.main.fragment_intalagent_bot.*
 import kotlinx.android.synthetic.main.fragment_lenta.*
-import kotlinx.android.synthetic.main.fragment_test_list.*
 
+class LentaFragment : BaseFragment(R.layout.fragment_lenta) {
 
-class TestListFragment : BaseFragment(R.layout.fragment_test_list) {
-
-    private val url = "http://192.168.1.43:80/test"
-
+    private val url = "http://192.168.1.43:80/vac"
 
     override fun onResume() {
         super.onResume()
-        APP_ACTIVITY.title = "Тесты"
+        APP_ACTIVITY.title = "Лента"
 
-        web_view_test.webViewClient = object : WebViewClient(){
+        lenta_web_view.webViewClient = object : WebViewClient(){
             override fun shouldOverrideUrlLoading(
                 view: WebView?,
                 request: WebResourceRequest?
@@ -33,15 +29,9 @@ class TestListFragment : BaseFragment(R.layout.fragment_test_list) {
                 return super.shouldOverrideUrlLoading(view, request)
             }
         }
-        val webSettings = web_view_test.settings
+        val webSettings = lenta_web_view.settings
 
         webSettings.javaScriptEnabled = true
-        web_view_test.loadUrl(url)
-
-
-
-
+        lenta_web_view.loadUrl(url)
     }
-
-
 }

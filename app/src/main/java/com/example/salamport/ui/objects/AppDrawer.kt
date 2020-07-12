@@ -135,7 +135,7 @@ class AppDrawer {
             2 -> replaceFragment(MapsFragment())
             3 -> replaceFragment(IntalagentBotFragment())
             4 -> replaceFragment(ContactsFragment())
-            5 -> replaceFragment(VideoCallFragmentFragment())
+            5 -> replaceFragment(LentaFragment())
             6 -> replaceFragment(TestListFragment())
             7 -> replaceFragment(SettingsFragment())
             9 -> replaceFragment(QRFragment())

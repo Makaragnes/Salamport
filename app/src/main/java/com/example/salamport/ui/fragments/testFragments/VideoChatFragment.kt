@@ -17,6 +17,7 @@ import androidx.core.content.ContextCompat
 import com.example.salamport.R
 import com.example.salamport.components.GLCircleDrawer
 import com.example.salamport.ui.fragments.BaseFragment
+import com.example.salamport.utilits.APP_ACTIVITY
 import com.example.salamport.videocall.VideoCallSession
 import com.example.salamport.videocall.VideoCallStatus
 import com.example.salamport.videocall.VideoRenderers
@@ -46,6 +47,7 @@ class VideoChatFragment : BaseFragment(R.layout.fragment_video_chat) {
 
     override fun onResume() {
         super.onResume()
+        APP_ACTIVITY.title = "Видеочат"
 
         val fragment = VideoChatFragment()
         fragment.isOffer = false

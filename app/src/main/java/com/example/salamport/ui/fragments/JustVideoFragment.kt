@@ -5,6 +5,7 @@ import android.webkit.WebResourceRequest
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import com.example.salamport.R
+import com.example.salamport.utilits.APP_ACTIVITY
 import kotlinx.android.synthetic.main.fragment_just_video.*
 
 
@@ -14,6 +15,8 @@ class JustVideoFragment : BaseFragment(R.layout.fragment_just_video) {
 
     override fun onResume() {
         super.onResume()
+
+        APP_ACTIVITY.title = "Видеочат"
 
             webView.webViewClient = object : WebViewClient(){
             override fun shouldOverrideUrlLoading(
@@ -27,8 +30,6 @@ class JustVideoFragment : BaseFragment(R.layout.fragment_just_video) {
         webView.setWebChromeClient(object : WebChromeClient() {
             override fun onProgressChanged(view: WebView, newProgress: Int) {
                 super.onProgressChanged(view, newProgress)
-
-
             }
         })
 
